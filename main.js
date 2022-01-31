@@ -4,8 +4,6 @@ const board = document.querySelectorAll(`.square`);
 let country = 0;
 
 for (let i = 0; i < board.length; i++) {
-
-
     const changeClick =() =>{
         country++;
         if( country% 2 ==0 ){
@@ -16,8 +14,7 @@ for (let i = 0; i < board.length; i++) {
         
         if(board[i].classList.contains('adds')){
             board[i].removeEventListener("click", changeClick)
-      console.log(country);
-      
+    
         }
        
     }
@@ -31,5 +28,5 @@ for (let i = 0; i < board.length; i++) {
     }
 
 board[i].addEventListener(`click`,changeClick);
-    
+  
 }

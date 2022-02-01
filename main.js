@@ -1,12 +1,12 @@
 const board = document.querySelectorAll(`.square`);
 
 
-let country = 0;
+let counter = 0;
 
 for (let i = 0; i < board.length; i++) {
     const changeClick =() =>{
-        country++;
-        if( country% 2 ==0 ){
+        counter++;
+        if( counter% 2 ==0 ){
             addCross()
         } else{
             addOver()     
